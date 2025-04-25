@@ -1,0 +1,55 @@
+@import '../abstracts/variables';
+
+.footer__bottom {
+    padding: 2.5rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2.5rem;
+
+    &-texts {
+        font-size: clamp($small-size, .6vw, 1.5rem);
+        color: $gray-font-color;
+        text-align: center;
+
+        .footer__bottom-text-mobile {
+            display: none;
+        }
+    }
+
+    .footer__seals {
+        img {
+            width: clamp(16.5rem, 16vw, 26rem);
+            height: auto;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    body {
+        footer {
+            .footer__bottom {
+                padding: 0 2rem 2rem 2rem;
+                &-texts {
+                    .footer__bottom-text {
+                        display: none;
+                    }
+
+                    .footer__bottom-text-mobile {
+                        display: block;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media(max-width: 480px) {
+    body {
+        footer {
+            .footer__bottom {
+                padding: 0 1rem 1.96rem 1rem;
+            }
+        }
+    }
+}

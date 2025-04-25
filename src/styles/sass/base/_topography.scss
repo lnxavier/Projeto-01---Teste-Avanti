@@ -1,0 +1,19 @@
+@import '../abstracts/variables';
+
+body {
+    font-family: $primary-font;
+    font-size: clamp($normal-size, .8vw, 1.62rem);
+    color: $primary-font-color;
+}
+
+footer {
+    font-family: $secundary-font;
+    color: $gray-font-color;
+}
+
+.subtitle {
+    font-family: $secundary-font;
+    font-weight: 700;
+    font-size: clamp($subtitle-size, 1vw, 2.2rem);
+}
+

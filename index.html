@@ -1,0 +1,1459 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/icons/logo-favicon.png" type="image/png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Vast+Shadow&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Vast+Shadow&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Vast+Shadow&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./src/styles/css/index.css">
+    <title>Avanti</title>
+</head>
+
+<body>
+    <!-- start of header -->
+    <header>
+        <section class="header">
+
+            <!-- top of the header -->
+            <div class="header__top-bar">
+                <p class="header__discount"> <!-- discount message -->
+                    Ganhe <span class="header__discount--highlight">R$10,00</span> de desconto no seu primeiro pedido.
+                    Utilize o cupom <span class="header__discount--coupon">DESCONTO10</span>
+                </p>
+            </div>
+
+            <!-- main section of the header -->
+            <div class="header__main">
+                <div class="header__menu"> <!-- menu -->
+                    <svg class="header__menu-icon" width="24" height="25" viewBox="0 0 24 25" fill="none"
+                        xmlns="http://www.w3.org/2000/svg">
+                        <line x1="1" y1="12.4998" x2="22.7185" y2="12.4998" stroke="black" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="1" y1="23.1921" x2="22.7185" y2="23.1921" stroke="black" stroke-width="2"
+                            stroke-linecap="round" />
+                        <line x1="1" y1="1.80762" x2="22.7185" y2="1.80762" stroke="black" stroke-width="2"
+                            stroke-linecap="round" />
+                    </svg>
+                    <img class="header__menu-logo" src="assets/images/logo.png" alt="Logo da loja">
+                    <!-- search bar -->
+                    <div class="header__menu-search-container">
+                        <input class="header__menu-search-bar" type="text" placeholder="Digite aqui o que você procura">
+                        <button class="header__menu-search-button">
+                            <img src="./assets/icons/search.png" alt="icone de pesquisa">
+                        </button>
+                    </div>
+                    <!-- login and shopping cart -->
+                    <div class="header__menu-client">
+                        <div class="header__menu-login">
+                            <a>
+                                <img class="header__menu-login-image" src="assets/icons/user.png"
+                                    alt="Ícone do usuário">
+                            </a>
+                            <a href="">Olá,<br>Nome cliente!</a>
+                        </div>
+                        <div class="header__menu-cart">
+                            <a href="">
+                                <img class="header__menu-cart-image" src="assets/icons/cart.png"
+                                    alt="Ícone do carrinho de compras"> <span
+                                    class="header__menu-cart-image--amount">2</span>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="header__categories"> <!-- categories and departament filter -->
+                    
+                    <div class="header__categories__main">
+                        <div class="header__filter" id="header-filter">
+                            <img class="header__filter-icon" src="assets/icons/menu.png" alt="Ícone do menu">
+                            <img class="header__filter-icon--hover" src="assets/icons/menu-hover.png" alt="">
+                            <p>Todas as Categorias</p>
+                        </div>
+                        <ul class="header__categories-list">
+                            <li class="header__item-list">Departamento</li>
+                            <li class="header__item-list">Departamento</li>
+                            <li class="header__item-list">Departamento</li>
+                            <li class="header__item-list">Departamento</li>
+                            <li class="header__item-list">Departamento</li>
+                            <li class="header__item-list">Departamento</li>
+                            <li class="header__item-list">Departamento</li>
+                            <li class="header__item-list">Departamento</li>
+                        </ul>
+                    </div>
+
+                    <div class="header__all-categories-dropdown"> <!-- dropdown all categories menu -->
+                        <ul>
+                            <li>
+                                <div class="header__all-categories-dropdown__item">
+                                    <h4>Departamento</h4>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" />
+                                    </svg>
+
+                                </div>
+                                <ul class="header__all-categories-dropdown__list">
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__all-categories-dropdown__item">
+                                    <h4>Departamento</h4>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" />
+                                    </svg>
+
+                                </div>
+                                <ul class="header__all-categories-dropdown__list">
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__all-categories-dropdown__item">
+                                    <h4>Departamento</h4>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" />
+                                    </svg>
+
+                                </div>
+                                <ul class="header__all-categories-dropdown__list">
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__all-categories-dropdown__item">
+                                    <h4>Departamento</h4>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" />
+                                    </svg>
+
+                                </div>
+                                <ul class="header__all-categories-dropdown__list">
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__all-categories-dropdown__item">
+                                    <h4>Departamento</h4>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" />
+                                    </svg>
+
+                                </div>
+                                <ul class="header__all-categories-dropdown__list">
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__all-categories-dropdown__item">
+                                    <h4>Departamento</h4>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" />
+                                    </svg>
+
+                                </div>
+                                <ul class="header__all-categories-dropdown__list">
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__all-categories-dropdown__item">
+                                    <h4>Departamento</h4>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" />
+                                    </svg>
+
+                                </div>
+                                <ul class="header__all-categories-dropdown__list">
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__all-categories-dropdown__item">
+                                    <h4>Departamento</h4>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" />
+                                    </svg>
+
+                                </div>
+                                <ul class="header__all-categories-dropdown__list">
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                    <li>Categoria</li>
+                                </ul>
+                            </li>
+                            <li>
+                                <div class="header__all-categories-dropdown__item">
+                                    <h4>Departamento</h4>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" />
+                                    </svg>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="header__all-categories-dropdown__item">
+                                    <h4>Departamento</h4>
+                                    <svg width="5" height="9" viewBox="0 0 5 9" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg">
+                                        <path
+                                            d="M4.45948 5.03932L1.27979 8.27623C0.987123 8.57459 0.512778 8.57459 0.219501 8.27623C-0.0731669 7.97892 -0.0731669 7.49559 0.219501 7.1978L2.86978 4.49986L0.219501 1.80232C-0.0731669 1.50453 -0.0731669 1.02185 0.219501 0.723405C0.512778 0.425531 0.987123 0.425531 1.27979 0.723405L4.45948 3.96032C4.60614 4.10958 4.67943 4.3048 4.67943 4.50002C4.67943 4.69524 4.60614 4.89038 4.45948 5.03932Z" />
+                                    </svg>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="header__dropdown__image__container">
+                            <img src="assets/images/menu-mug.png" alt="imagem de uma caneca com o logo da empresa">
+                            <div class="header__dropdown__image__content">
+                                <h2 class="header__dropdown__image__title">Confira os<br />Produtos<br />
+                                    <span class="header__dropdown__image__title--highlight">Que<br />acabaram<br />De
+                                        chegar</span>
+                                </h2>
+                                <a href="#">VER TODOS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="header__department-dropdown"> <!-- dropdown department menu -->
+                        <div class="header__department-dropdown__menu">
+                            <h3>Departamento</h3>
+                            <ul class="header__department-dropdown__list">
+                                <li class="header__department-dropdown__item">
+                                    <ul class="header__department-dropdown__categories-list">
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                    </ul>
+                                </li>
+                                <li class="header__department-dropdown__item">
+                                    <ul class="header__department-dropdown__categories-list">
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                    </ul>
+                                </li>
+                                <li class="header__department-dropdown__item">
+                                    <ul class="header__department-dropdown__categories-list">
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                    </ul>
+                                </li>
+                                <li class="header__department-dropdown__item">
+                                    <ul class="header__department-dropdown__categories-list">
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                    </ul>
+                                </li>
+                                <li class="header__department-dropdown__item">
+                                    <ul class="header__department-dropdown__categories-list">
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                    </ul>
+                                </li>
+                                <li class="header__department-dropdown__item">
+                                    <ul class="header__department-dropdown__categories-list">
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                    </ul>
+                                </li>
+                                <li class="header__department-dropdown__item">
+                                    <ul class="header__department-dropdown__categories-list">
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                    </ul>
+                                </li>
+                                <li class="header__department-dropdown__item">
+                                    <ul class="header__department-dropdown__categories-list">
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                        <li>Categoria</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="header__dropdown__image__container">
+                            <img src="assets/images/menu-mug.png" alt="imagem de uma caneca com o logo da empresa">
+                            <div class="header__dropdown__image__content">
+                                <h2 class="header__dropdown__image__title">Confira os<br />Produtos<br />
+                                    <span class="header__dropdown__image__title--highlight">Que<br />acabaram<br />De
+                                        chegar</span>
+                                </h2>
+                                <a href="#">VER TODOS</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </header>
+    <!-- start of main -->
+    <main>
+        <section class="offer"> <!-- offer section -->
+            <img class="offer__image" src="assets/images/offer.png" alt="imagem de uma cadeira com roupas">
+            <div class=" offer__text">
+            <h1 class="offer__title"><span class="offer__title--highlight">SUPER</span>SALE</h1>
+            <p class="offer__description">ITENS SELECIONADOS COM ATÉ</p>
+            <h2 class="offer__discount">50%OFF</h2>
+            </div>
+        </section>
+        <section class="offers-mobile" id="offers-mobile"> <!-- offer section visible in small screens-->
+            <div class="offers-mobile-container">
+                <div class="offer-mobile">
+                    <img class="offer-mobile__image" src="assets/images/offer-mobile.png" alt="imagem de uma cadeira com roupas">
+                    <div class="offer-mobile__text">
+                        <h1 class="offer-mobile__title"><span class="offer-mobile__title--highlight">SUPER<br /></span>SALE</h1>
+                        <p class="offer-mobile__description">SELECTED ITEMS UP TO</p>
+                        <h2 class="offer-mobile__discount">50%OFF</h2>
+                    </div>
+                </div>
+                <div class="offer-mobile">
+                    <img class="offer-mobile__image" src="assets/images/offer-mobile.png" alt="imagem de uma cadeira com roupas">
+                    <div class="offer-mobile__text">
+                        <h1 class="offer-mobile__title"><span class="offer-mobile__title--highlight">SUPER<br /></span>SALE</h1>
+                        <p class="offer-mobile__description">SELECTED ITEMS UP TO</p>
+                        <h2 class="offer-mobile__discount">50%OFF</h2>
+                    </div>
+                </div>
+                <div class="offer-mobile">
+                    <img class="offer-mobile__image" src="assets/images/offer-mobile.png" alt="imagem de uma cadeira com roupas">
+                    <div class="offer-mobile__text">
+                        <h1 class="offer-mobile__title"><span class="offer-mobile__title--highlight">SUPER<br /></span>SALE</h1>
+                        <p class="offer-mobile__description">SELECTED ITEMS UP TO</p>
+                        <h2 class="offer-mobile__discount">50%OFF</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="offers__indicators">
+                <svg class="offers__indicator" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3.5" cy="3.5" r="3.5" fill="#838383" />
+                </svg>
+                <svg class="offers__indicator" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3.5" cy="3.5" r="3.5" fill="#838383" />
+                </svg>
+                <svg class="offers__indicator" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3.5" cy="3.5" r="3.5" fill="#838383" />
+                </svg>
+            </div>
+        </section>
+        <section class="releases"> <!-- releases section -->
+            <div class="releases__top">
+                <h2 class="subtitle">Lançamentos</h2>
+                <p>Ver mais</p>
+            </div>
+            <div class="releases__tabs">
+                <!-- tab 1 -->
+                <div class="releases__tab">
+                    <ul class="releases__list">
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="button">Comprar</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- tab 2 -->
+                <div class="releases__tab">
+                    <ul class="releases__list">
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- tab 3 -->
+                <div class="releases__tab">
+                    <ul class="releases__list">
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navigate arrows -->
+                <div class="releases__right-arrow">
+                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.93385 0L5.50577 1.41855L8.60371 4.51649H0.400391V6.51891H8.60371L5.50577 9.61685L6.93385 11.0354L12.439 5.5177L6.93385 0Z" />
+                    </svg>
+                </div>
+                <div class="releases__left-arrow">
+                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.46654 12L7.89462 10.5814L4.79668 7.48351L13 7.48351L13 5.48109L4.79668 5.48109L7.89462 2.38315L6.46654 0.964598L0.961381 6.4823L6.46654 12Z" />
+                    </svg>
+                </div>
+            </div>
+            <!-- icons that indicate which tab is visible -->
+            <div class="releases__indicators">
+                <svg class="releases__indicator" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3.5" cy="3.5" r="3.5" fill="#838383" />
+                </svg>
+                <svg class="releases__indicator" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3.5" cy="3.5" r="3.5" fill="#838383" />
+                </svg>
+                <svg class="releases__indicator" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3.5" cy="3.5" r="3.5" fill="#838383" />
+                </svg>
+            </div>
+        </section>
+        <section class="texts"> <!-- texts section -->
+            <div class="texts__first-block">
+                <img src="assets/images/mug.png" alt="Imagem de uma caneca com o logo da empresa">
+                <div class="texts__first-block-content">
+                    <h2>LOREM IPSUM</h2>
+                    <div class="texts__first-block-content__text">
+                        <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
+                            lacus
+                            ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+                            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor
+                            eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum.
+                            Fusce
+                            sagittis elit a libero commodo egestas efficitur id augue.
+                        </p>
+                        <p>
+                            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
+                            lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet.
+                            Sed
+                            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor
+                            eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum.
+                            Fusce
+                            sagittis elit a libero commodo egestas efficitur id augue.
+                        </p>
+                    </div>
+                    <div class="texts__first-block-content__text-mobile">
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                            consequat massa quis enim.
+                        </p>
+                        <p>
+                            Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut
+                            vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin
+                            porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna
+                            nisl, vel porttitor augue placerat et.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="texts__second-block">
+                <div class="texts__second-block-content">
+                    <h2>LOREM IPSUM</h2>
+                    <div class="texts__second-block-content-paragraph">
+                        <img src="assets/icons/map-icon.png" alt="Icone de localização">
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                        </p>
+                    </div>
+                    <div class="texts__second-block-content-paragraph">
+                        <img src="assets/icons/map-icon.png" alt="Icone de localização">
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                        </p>
+                    </div>
+                    <div class="texts__second-block-content-paragraph">
+                        <img src="assets/icons/map-icon.png" alt="Icone de localização">
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+                        </p>
+                    </div>
+                </div>
+                <img class="texts__second-block-image" src="assets/images/mug-2.png"
+                    alt="Imagem de uma caneca com o logo da empresa">
+            </div>
+            <div class="texts__third-block">
+                <img src="assets/images/mug.png" alt="Imagem de uma caneca com o logo da empresa">
+                <div class="texts__first-block-content">
+                    <h2>LOREM IPSUM</h2>
+                    <div class="texts__first-block-content__text">
+                        <p>Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
+                            lacus
+                            ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet. Sed
+                            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor
+                            eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum.
+                            Fusce
+                            sagittis elit a libero commodo egestas efficitur id augue.
+                        </p>
+                        <p>
+                            Duis consectetur metus nec lacus auctor dignissim. Mauris vitae finibus dui. Mauris laoreet
+                            lacus ut eleifend viverra. Cras efficitur volutpat dui, in lobortis metus lacinia sit amet.
+                            Sed
+                            lacinia pharetra magna, vel pulvinar ligula hendrerit a. Maecenas fringilla porttitor tortor
+                            eget lacinia. Donec sollicitudin euismod orci, auctor fringilla magna consequat interdum.
+                            Fusce
+                            sagittis elit a libero commodo egestas efficitur id augue.
+                        </p>
+                    </div>
+                    <div class="texts__first-block-content__text-mobile">
+                        <p>Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur
+                            ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla
+                            consequat massa quis enim.
+                        </p>
+                        <p>
+                            Cras dignissim est et pellentesque tincidunt. Praesent bibendum quis velit a aliquam. Ut
+                            vestibulum turpis eget mi iaculis ullamcorper. Curabitur nec metus sed tortor sollicitudin
+                            porta nec eu enim. Ut fermentum scelerisque tortor mollis volutpat. Mauris iaculis magna
+                            nisl, vel porttitor augue placerat et.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="releases"> <!-- releases section -->
+            <div class="releases__top">
+                <h2 class="subtitle">Lançamentos</h2>
+                <p>Ver mais</p>
+            </div>
+            <div class="releases__tabs">
+                <!-- tab 1 -->
+                <div class="releases__tab">
+                    <ul class="releases__list">
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- tab 2 -->
+                <div class="releases__tab">
+                    <ul class="releases__list">
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- tab 3 -->
+                <div class="releases__tab">
+                    <ul class="releases__list">
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                        <li class="releases__item">
+                            <a class="releases__image" href="">
+                                <img src="assets/images/product.png" alt="product image">
+                                <p class="releases__new">NOVO</p>
+                            </a>
+                            <div class="releases__description">
+                                <h3 class="releases__subtitle">&lt;h3&gt; Lorem ipsum dolor sit amet consectetuer
+                                    adipiscing
+                                    elit &lt;h3&gt;</h3>
+                                <div class="releases__price-container">
+                                    <div class="releases__value-container">
+                                        <p class="releases__product-value">R$ 100,00</p>
+                                        <p class="releases__new-value">R$79,90</p>
+                                    </div>
+                                    <a class="releases__discount"
+                                        href="https://www.figma.com/exit?url=https%3A%2F%2Fwww.nike.com.br%2Fsnkrs%2Fair-max-1-86-027221.html%3Fcor%3D51">
+                                        10% off
+                                    </a>
+                                </div>
+                                <p class="releases__installments">Ou em até <span
+                                        class="releases__installments--highlight">10x
+                                        de R$ 7,90</span></p>
+                            </div>
+                            <button class="releases__button">Comprar</button>
+                        </li>
+                    </ul>
+                </div>
+                <!-- navigate arrows -->
+                <div class="releases__right-arrow">
+                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.93385 0L5.50577 1.41855L8.60371 4.51649H0.400391V6.51891H8.60371L5.50577 9.61685L6.93385 11.0354L12.439 5.5177L6.93385 0Z" />
+                    </svg>
+                </div>
+                <div class="releases__left-arrow">
+                    <svg width="13" height="12" viewBox="0 0 13 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path
+                            d="M6.46654 12L7.89462 10.5814L4.79668 7.48351L13 7.48351L13 5.48109L4.79668 5.48109L7.89462 2.38315L6.46654 0.964598L0.961381 6.4823L6.46654 12Z" />
+                    </svg>
+                </div>
+            </div>
+            <!-- icons that indicate which tab is visible -->
+            <div class="releases__indicators">
+                <svg class="releases__indicator" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3.5" cy="3.5" r="3.5" fill="#838383" />
+                </svg>
+                <svg class="releases__indicator" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3.5" cy="3.5" r="3.5" fill="#838383" />
+                </svg>
+                <svg class="releases__indicator" width="7" height="7" viewBox="0 0 7 7" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="3.5" cy="3.5" r="3.5" fill="#838383" />
+                </svg>
+            </div>
+        </section>
+        <section class="cta"> <!-- 'call to action' section -->
+            <img class="cta__image" src="assets/images/background-image.png"
+                alt="imagem ilustrativa do escritório da empresa">
+            <img class="cta__image-mobile" src="assets/images/background-image-mobile.png"
+                alt="imagem ilustrativa do escritório da empresa">
+            <div class="cta__text-container">
+                <h2>Entre em contato conosco e verifique a disponibilidade para sua região!</h2>
+            </div>
+        </section>
+        <section class="newsletter"> <!-- newsletter section -->
+            <h2 class="subtitle">Cadastre-se na nossa <span class="newsletter__title--highlight">newsletter</span></h2>
+            <form class="newsletter__form">
+                <input class="newsletter__input" type="text" name="name" placeholder="Digite seu nome" required>
+                <input class="newsletter__input" type="text" name="email" placeholder="Digite seu e-mail" required>
+                <label>
+                    <input class="newsletter__checkbox" type="checkbox" name="checkbox" required>
+                    Estou de acordo com a <a href="#">Política de Privacidade</a>
+                </label>
+                <button class="button" type="submit">Cadastrar</button>
+            </form>
+        </section>
+    </main>
+    <!-- start of footer -->
+    <footer>
+        <section class="footer__top"> <!--links to social networks and useful information -->
+            <div class="footer__brand">
+                <img class="footer__logo" src="assets/images/logo.png" alt="logo da empresa">
+                <div class="footer__brand-links">
+                    <a class="footer__instagram" href="#"><img src="assets/icons/instagram.png" alt="logo do instagram"></a>
+                    <a class="footer__facebook" href="#"><img src="assets/icons/facebook.png" alt="logo do facebook"></a>
+                    <a class="footer__youtube" href="#"><img src="assets/icons/youtube.png" alt="logo do youtube"></a>
+                    <a class="footer__ticktock" href="#"><img src="assets/icons/tiktok.png" alt="logo do tiktok"></a>
+                </div>
+            </div>
+            <div class="footer__links">
+                <div class="footer__column institucional">
+                    <button class="footer__column-title">
+                        <h4>Institucional</h4>
+                        <svg class="footer__column-title__icon" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.5 3.17937e-09L12 1.5285L6 7.5L3.23978e-09 1.5285L1.5 2.22556e-08L6 4.5L10.5 3.17937e-09Z"
+                                fill="#005CFF" />
+                        </svg>
+                    </button>
+                    <ul class="footer__column-list">
+                            <li><a href="#">Sobre Nós</a></li>
+                            <li><a href="#">Nossas Lojas</a></li>
+                            <li><a href="#">Privacidade e Segurança</a></li>
+                            <li><a href="#">Termos e Condições</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column help">
+                    <button class="footer__column-title">
+                        <h4>Central de ajuda</h4>
+                        <svg class="footer__column-title__icon" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.5 3.17937e-09L12 1.5285L6 7.5L3.23978e-09 1.5285L1.5 2.22556e-08L6 4.5L10.5 3.17937e-09Z"
+                                fill="#005CFF" />
+                        </svg>
+                    </button>
+                    <ul class="footer__column-list">
+                        <li><a href="#">Fale Conosco</a></li>
+                        <li><a href="#">Frete e Entrega</a></li>
+                        <li><a href="#">Trocas e Devoluções</a></li>
+                        <li><a href="#">Formas de Pagamento</a></li>
+                        <li><a href="#">FAQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer__column service">
+                    <button class="footer__column-title">
+                        <h4>Atendimento</h4>
+                        <svg class="footer__column-title__icon" width="12" height="8" viewBox="0 0 12 8" fill="none"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.5 3.17937e-09L12 1.5285L6 7.5L3.23978e-09 1.5285L1.5 2.22556e-08L6 4.5L10.5 3.17937e-09Z"
+                                fill="#005CFF" />
+                        </svg>
+                    </button>
+                    <ul class="footer__column-list">
+                        <li><span class="footer__label">Telefone:</span> (00) 1234-5678</li>
+                        <li><span class="footer__label">E-mail:</span> exemplo@exemplo.com.br</li>
+                        <li class="footer__service-hour">
+                            <h5>Horário de atendimento:</h5>
+                            <p>Segunda a Sábado: 07h00 às 23h00</p>
+                            <p>Domingos e Feriados: 07h00 às 21h00</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+        <section class="footer__payment"> <!-- payment methods -->
+            <img class="footer__payment-image" src="assets/images/payment.png" alt="metodos de pagamento">
+            <img class="footer__payment-image-mobile" src="assets/images/payment-mobile.png" alt="metodos de pagamento">
+        </section>
+        <section class="footer__bottom"> <!-- legal information and trust seals -->
+            <div class="footer__bottom-texts">
+                <p class="footer__bottom-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+                    nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure
+                    dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla
+                    facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril
+                    delenit augue duis dolore te feugait nulla facilisi.
+                </p>
+                <p class="footer__bottom-text-mobile">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci.
+                </p>
+            </div>
+            <div class="footer__seals">
+                <img src="assets/images/seals.png" alt="logos das empresas e selos">
+            </div>
+        </section>
+    </footer>
+    <script type="module" src="./src/scripts/script.js"></script>
+</body>
+
+</html>

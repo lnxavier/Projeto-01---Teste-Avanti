@@ -1,0 +1,32 @@
+.footer__payment {
+    padding-bottom: 4rem;
+    display: flex;
+    justify-content: center;
+
+    &-image {
+        width: clamp(28.25rem, 29vw, 50.5rem);
+        height: auto;
+    }
+
+    &-image-mobile {
+        display: none;
+    }
+}
+
+@media(max-width: 768px) {
+    body {
+        footer {
+            .footer__payment {
+                &-image {
+                    display: none;
+                }
+
+                &-image-mobile {
+                    display: block;
+                    width: clamp(15rem, 70vw, 18rem);
+                    height: auto;
+                }
+            }
+        }
+    }
+}

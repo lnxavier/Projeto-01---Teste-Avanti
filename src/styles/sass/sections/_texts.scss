@@ -1,0 +1,157 @@
+@import '../abstracts/variables';
+
+.texts {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+    padding: 0 18vw;
+    font-size: clamp($normal-size, .8vw, 1.62rem);
+    line-height: 1.4em;
+
+    %text-blocks {
+        display: flex;
+        align-items: center;
+
+        h2 {
+            font-size: clamp(1.25rem, 1.7vw, 2.87rem);
+            font-weight: 700;
+            letter-spacing: .04rem;
+        }
+
+        p {
+            letter-spacing: .05rem;
+        }
+    }
+
+    &__first-block {
+        @extend %text-blocks;
+        
+        gap: 2.34rem;
+        
+        img {
+            width: 55%;
+            height: auto;
+        }
+
+        &-content {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            gap: 1.37rem;
+
+            &__text-mobile {
+                display: none;
+            }
+        }
+    }
+
+    &__second-block {
+        @extend %text-blocks;
+        color: $light-gray-font-color;
+        gap: 3.25rem;
+
+        &-content {
+            width: 45%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 3.12rem;
+
+            &-paragraph {
+                display: flex;
+                align-items: center;
+                gap: 1.25rem;
+
+                img {
+                    width: clamp(3.75rem, 5vw, 5.62rem);
+                    height: auto;
+                }
+            }
+        }
+
+        &-image {
+            width: 55%;
+            height: auto;
+        }
+    }
+
+    &__third-block {
+        @extend .texts__first-block;
+    }
+}
+
+@media(max-width: 1024px){
+    body{
+        main{
+            .texts {
+                padding: 0 2rem;
+            }
+        }
+    }
+}
+
+@media(max-width: 768px){
+    body{
+        main{
+            .texts {
+                margin-bottom: 3rem;
+                padding: 0;
+                gap: 3.5rem;
+
+                .texts__first-block {
+                    flex-direction: column;
+
+                    img {
+                        width: 100%;
+                        height: auto;
+                        aspect-ratio: 1;
+                        object-fit: cover;
+                    }
+
+                    .texts__first-block-content {
+                        width: 100%;
+                        gap: 1.12rem;
+                        padding: 0 1.5rem;
+
+                        &__text {
+                            display: none;
+                        }
+
+                        &__text-mobile {
+                            display: flex;
+                            flex-direction: column;
+                            gap: 1.12rem;
+                        }
+                    }
+
+                }
+                
+                .texts__second-block {
+                    color: $primary-font-color;
+                    flex-direction: column;
+                    gap: 1.31rem;
+
+                    &-content {
+                        order: 2;
+                        width: 100%;
+                        gap: 1.31rem;
+                        padding: 0 1.31rem 1.75rem 1.31rem;
+
+                        &-paragraph {
+                            gap: .87rem;
+                        }
+                    }
+
+                    &-image {
+                        order: 1;
+                        width: 100%;
+                        height: auto;
+                        aspect-ratio: 1;
+                        object-fit: cover;
+                        padding: 1.75rem 1.37rem 0 1.37rem;
+                    }
+                }
+            }
+        }
+    }
+}

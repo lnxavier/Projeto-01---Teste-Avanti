@@ -1,0 +1,12 @@
+.button {
+    width: 100%;
+    padding: 0.62rem 1.5rem;
+    border-radius: 8px;
+    background-color: $primary-color;
+    color: $secundary-font-color;
+    font-weight: 700;
+}
+
+.button:hover {
+    background-color: $primary-color-hover;
+}

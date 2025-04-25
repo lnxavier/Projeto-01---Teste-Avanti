@@ -1,0 +1,268 @@
+@import '../abstracts/variables';
+@import '../components/button';
+
+.releases {
+    padding: 6rem 16vw;
+    display: flex;
+    flex-direction: column;
+    gap: 1.19rem;
+    font-weight: 700;
+
+    &__top {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        p {
+            color: $gray-font-color;
+            cursor: pointer;
+        }
+
+        p:hover {
+            color: $primary-color;
+            text-decoration: underline;
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        flex-direction: column;
+        position: relative;
+
+        .releases__tab {
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity .5s ease, visibility .8s ease;
+            position: absolute;
+            width: 100%;
+            
+
+            .releases__list {
+                display: flex;
+                gap: 1.06rem;
+                overflow-x: auto;
+                scrollbar-width: none;
+                
+                &:hover {
+                    scrollbar-width: thin;
+                }
+              
+                &:hover::-webkit-scrollbar {
+                  height: 6px;
+                }
+    
+                .releases__item {
+                    padding: .5rem;
+                    display: flex;
+                    flex-direction: column;
+                    flex: 0 0 auto; 
+                    gap: 1rem;
+                    align-items: center;
+                    width: clamp(238px, 13vw, 500px);
+                    font-family: $secundary-font;
+                    
+                    .releases__image {
+                        width: 100%;
+                        position: relative;
+        
+                        & img {
+                            width: 100%;
+                            height: auto;
+                        }
+                        
+                        .releases__new {
+                            position: absolute;
+                            top: 2px;
+                            left: 0;
+                            padding: 4px 6px;
+                            display: flex;
+                            align-items: center;
+                            justify-content: center;
+                            border-radius: 4px;
+                            background-color: $tertiary-color;
+                            color: $secundary-font-color;
+                            font-size: clamp($super-small-size, .6vw, 1.5rem);
+                            font-weight: 700;
+                        }
+                    }
+        
+                    .releases__description {
+                        display: flex;
+                        flex-direction: column;
+                        gap: .25rem;
+        
+                        .releases__subtitle {
+                            color: $gray-font-color;
+                            font-weight: 400;
+                        }
+        
+                        .releases__price-container {
+                            display: flex;
+                            align-items: center;
+                            gap: .5rem;
+        
+                            .releases__value-container {
+        
+                                .releases__product-value {
+                                    @extend .releases__subtitle;
+                                    font-size: clamp($small-size, .6vw, 1.5rem);
+                                    text-decoration: line-through;
+                                }
+                            }
+        
+                            .releases__discount {
+                                font-size: clamp($very-small-size, .6vw, 1.5rem);
+                                font-weight: 700;
+                                background-color: $secundary-color;
+                                color: $secundary-font-color;
+                                border-radius: 4px;
+                                padding: .25rem .50rem;
+        
+                            }
+                        }
+        
+                        .releases__installments {
+                            @extend .releases__product-value;
+                            @extend .releases__subtitle;
+                            font-size: clamp($small-size, .6vw, 1.5rem);
+
+        
+                            &--highlight {
+                                font-weight: 700;
+                            }
+                        }
+                    }
+        
+                    .releases__button {
+                        width: 100%;
+                        padding: 0.62rem 1.5rem;
+                        border-radius: 8px;
+                        background-color: $primary-color;
+                        color: $secundary-font-color;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    
+        .releases__tab.active {
+            opacity: 1;
+            visibility: visible;
+            position: relative;
+        }
+
+        %arrow-shared {
+            position: absolute;
+            border: 1px solid $primary-color;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+            padding: clamp(4px, 0.3vw, 10px);
+          
+            svg {
+              width: clamp(12px, 0.5vw, 30px);
+              height: auto;
+              fill: $primary-color;
+            }
+          
+            &:hover {
+              background-color: $primary-color;
+          
+              svg {
+                fill: #ffffff;
+              }
+            }
+        }
+
+        .releases__right-arrow {
+            @extend %arrow-shared;
+            right: -9px;
+            top: 48%;
+        }
+          
+        .releases__left-arrow {
+            @extend %arrow-shared;
+            left: -9px;
+            top: 48%;
+        }
+    }
+    
+    &__indicators {
+        align-self: center;
+
+        .releases__indicator.active circle {
+            fill: $gray-font-color;
+        }
+    }
+}
+
+@media(max-width: 1024px) {
+    body{
+        main{
+            .releases {
+                padding: 3.5rem 2rem;
+                gap: 1rem;
+
+                .releases__top {
+                    p {
+                        text-decoration: underline;
+                    }
+                }
+
+                .releases__tabs {
+                    .releases__tab {
+                        .releases__list {
+                            gap: .62rem;
+                
+                            .releases__item {
+                                width: clamp(8.9rem, 18vw, 11.5rem);
+                                gap: .5rem;
+                
+                                .releases__description {
+                                    gap: 0.75rem;
+                                }
+                            }
+                        }
+                    }
+                    .releases__right-arrow {
+                        display: none;
+                    }
+                    .releases__left-arrow {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    body{
+        main{
+            .releases {
+                &__top {
+                    h2 {
+                        font-size: 1rem;
+                    }
+                }
+            }
+        }
+    }
+    main > section.releases:nth-child(5) {
+      display: none;
+    }
+
+
+}
+
+@media(max-width: 480px) {
+    body{
+        main{
+            .releases {
+                padding: 3.5rem 1rem;
+            }
+        }
+    }
+}
