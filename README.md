@@ -10,6 +10,20 @@ O foco foi criar a estrutura visual e interativa utilizando **HTML**, **Sass** (
 
 ---
 
+## ⚠️ Observações
+
+Durante a análise após o deploy do projeto, identifiquei alguns pontos que não estavam totalmente alinhados com o protótipo original:
+
+- **Cor de fundo das imagens:** percebi que, após o deploy, algumas imagens apresentaram uma cor de fundo incorreta. Isso ocorreu pela ausência da propriedade `background-color` nas classes relacionadas. O navegador, nesse caso, aplicou uma cor padrão automaticamente, causando uma divergência visual em relação ao protótipo. Importante ressaltar que, durante o desenvolvimento local utilizando o `vite run dev`, esse problema **não se manifestava**, o que dificultou sua identificação antecipada.
+
+- **Sessão de "Lançamentos":** os itens dessa seção deveriam conter uma borda sutil, que não percebi durante os testes. Isso aconteceu porque utilizei um monitor antigo com baixa fidelidade de cores, dificultando a distinção entre os elementos visuais.
+
+- **Newsletter e Footer:** o mesmo problema de percepção ocorreu nessas seções. Algumas cores e bordas definidas no protótipo acabaram não sendo aplicadas corretamente por não terem sido notadas nas condições de teste.
+
+Todos esses ajustes são simples de serem corrigidos com pequenas alterações no CSS. No entanto, optei por não modificá-los após o prazo final do processo seletivo, a fim de preservar a integridade da entrega original.
+
+---
+
 ## 🛠️ Tecnologias Utilizadas
 
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
