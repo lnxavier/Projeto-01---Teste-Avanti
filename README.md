@@ -14,17 +14,17 @@ O foco foi criar a estrutura visual e interativa utilizando **HTML**, **Sass** (
 
 Durante a análise após o deploy do projeto, identifiquei alguns pontos que não estavam totalmente alinhados com o protótipo original:
 
-- **Cor de fundo das imagens:** percebi que, após o deploy, algumas imagens apresentaram uma cor de fundo incorreta. Isso ocorreu pela ausência da propriedade `background-color` nas classes relacionadas. O navegador, nesse caso, aplicou uma cor padrão automaticamente, causando uma divergência visual em relação ao protótipo. Importante ressaltar que, durante o desenvolvimento local utilizando o `vite run dev`, esse problema **não se manifestava**, o que dificultou sua identificação antecipada.
+- **Cor de fundo das imagens:** após o deploy, algumas imagens apresentaram uma cor de fundo incorreta. Isso ocorreu devido à ausência da propriedade `background-color` nas classes correspondentes. O navegador, nesse caso, aplicou uma cor padrão automaticamente, causando divergência visual em relação ao protótipo. Importante ressaltar que, durante o desenvolvimento local utilizando o `vite run dev`, esse problema **não se manifestava**, o que dificultou sua identificação antecipada.
 
-- **Sessão de "Lançamentos":** os itens dessa seção deveriam conter uma borda sutil, que não percebi durante os testes. Isso aconteceu porque utilizei um monitor antigo com baixa fidelidade de cores, dificultando a distinção entre os elementos visuais.
+- **Sessão de "Lançamentos":** os itens dessa seção deveriam conter uma borda sutil, que não percebi durante os testes. Isso ocorreu porque utilizei um monitor antigo, com baixa fidelidade de cores, o que dificultou a distinção entre os elementos visuais.
 
-- **Segundo bloco de texto:** novamente o problema de fidelidade afeteu o resultado final, nesta sessão a propiedade 'background-color' deveria ser um pouco mais escuro.
+- **Segundo bloco de texto:** novamente, o problema de fidelidade afetou o resultado final. Nessa seção, a propriedade `background-color` deveria ter um tom um pouco mais escuro.
 
-- **Newsletter e Footer:** o mesmo problema de percepção ocorreu nessas seções. Algumas cores e bordas definidas no protótipo acabaram não sendo aplicadas corretamente por não terem sido notadas nas condições de teste.
+- **Newsletter e Footer:** o mesmo problema de percepção ocorreu nessas seções. Algumas cores e bordas definidas no protótipo acabaram não sendo aplicadas corretamente, por não terem sido percebidas nas condições de teste.
 
-Todos esses ajustes são simples de serem corrigidos com pequenas alterações no CSS. No entanto, optei por não modificá-los após o prazo final do processo seletivo, a fim de preservar a integridade da entrega original.
+Todos esses ajustes são simples de corrigir com pequenas alterações no CSS. No entanto, optei por não modificá-los após o prazo final do processo seletivo, a fim de preservar a integridade da entrega original.
 
-**Peço desculpas por esses erros e fico desapontado, pois no momento do envio acreditava estar 100%**
+**Peço desculpas por esses erros e fico desapontado, pois, no momento do envio, acreditava que o projeto estava 100% alinhado com o esperado.**
 
 ---
 
@@ -35,7 +35,6 @@ Todos esses ajustes são simples de serem corrigidos com pequenas alterações n
 ![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
 
-
 ---
 
 ## 📋 Descrição do Projeto
@@ -45,4 +44,3 @@ Todos esses ajustes são simples de serem corrigidos com pequenas alterações n
 - Layout responsivo para diferentes dispositivos.
 - Estilização utilizando **Sass**, permitindo organização e manutenção mais eficiente do CSS.
 - Interações básicas com JavaScript para melhorar a experiência do usuário.
-
