@@ -18,9 +18,13 @@ Durante a análise após o deploy do projeto, identifiquei alguns pontos que nã
 
 - **Sessão de "Lançamentos":** os itens dessa seção deveriam conter uma borda sutil, que não percebi durante os testes. Isso aconteceu porque utilizei um monitor antigo com baixa fidelidade de cores, dificultando a distinção entre os elementos visuais.
 
+- **Segundo bloco de texto:** novamente o problema de fidelidade afeteu o resultado final, nesta sessão a propiedade 'background-color' deveria ser um pouco mais escuro.
+
 - **Newsletter e Footer:** o mesmo problema de percepção ocorreu nessas seções. Algumas cores e bordas definidas no protótipo acabaram não sendo aplicadas corretamente por não terem sido notadas nas condições de teste.
 
 Todos esses ajustes são simples de serem corrigidos com pequenas alterações no CSS. No entanto, optei por não modificá-los após o prazo final do processo seletivo, a fim de preservar a integridade da entrega original.
+
+**Peço desculpas por esses erros e fico desapontado, pois no momento do envio acreditava estar 100%**
 
 ---
 
