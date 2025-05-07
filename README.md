@@ -16,7 +16,7 @@ Durante a análise após o deploy do projeto, identifiquei alguns pontos que nã
 
 - **Cor de fundo das imagens:** após o deploy, algumas imagens apresentaram uma cor de fundo incorreta. Isso ocorreu devido à ausência da propriedade `background-color` nas classes correspondentes. O navegador, nesse caso, aplicou uma cor padrão automaticamente, causando divergência visual em relação ao protótipo. Importante ressaltar que, durante o desenvolvimento local utilizando o `vite run dev`, esse problema **não se manifestava**, o que dificultou sua identificação antecipada.
 
-- **Sessão de "Lançamentos":** os itens dessa seção deveriam conter uma borda sutil, que não percebi durante os testes. Isso ocorreu porque utilizei um monitor antigo, com baixa fidelidade de cores, o que dificultou a distinção entre os elementos visuais.
+- **Seção de "Lançamentos":** os itens dessa seção deveriam conter uma borda sutil, que não percebi durante os testes. Isso ocorreu porque utilizei um monitor antigo, com baixa fidelidade de cores, o que dificultou a distinção entre os elementos visuais.
 
 - **Segundo bloco de texto:** novamente, o problema de fidelidade afetou o resultado final. Nessa seção, a propriedade `background-color` deveria ter um tom um pouco mais escuro.
 
