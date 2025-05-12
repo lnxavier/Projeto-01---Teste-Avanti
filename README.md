@@ -14,7 +14,7 @@ O foco foi criar a estrutura visual e interativa utilizando **HTML**, **Sass** (
 
 Durante a análise após o deploy do projeto, identifiquei alguns pontos que não estavam totalmente alinhados com o protótipo original:
 
-- **Cor de fundo das imagens:** após o deploy, algumas imagens apresentaram uma cor de fundo incorreta. Isso ocorreu devido à ausência da propriedade `background-color` nas classes correspondentes. O navegador, nesse caso, aplicou uma cor padrão automaticamente, causando divergência visual em relação ao protótipo. Importante ressaltar que, durante o desenvolvimento local utilizando o `vite run dev`, esse problema **não se manifestava**, o que dificultou sua identificação antecipada.
+- **Cor de fundo das imagens:** após o deploy, algumas imagens apresentaram uma cor de fundo incorreta. Isso ocorreu devido à ausência da propriedade `background-color` nas classes correspondentes. O navegador, nesse caso, aplicou uma cor padrão automaticamente, causando divergência visual em relação ao protótipo. Não percebi devido a baixa fidelidade de cores do monitor que usei durante o desenvolvimento, o que dificultou a identificação antecipada.
 
 - ** Barra de Pesquisa e Seção de "Lançamentos":** a barra de pesquisa e os itens dessa seção deveriam conter uma borda sutil, que não percebi durante os testes. Isso ocorreu porque utilizei um monitor antigo, com baixa fidelidade de cores, o que dificultou a distinção entre os elementos visuais.
 
